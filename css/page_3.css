@@ -1,0 +1,131 @@
+/* RTL */
+.wrap.rtl {
+  /* Page 1 */
+}
+.wrap.rtl .page_1 {
+  width: 100%;
+}
+.wrap.rtl .page_1 .page__wrapper {
+  width: 100%;
+  padding: 2.19% 1.52% 2.25% 4.81%;
+}
+
+/* RTL End */
+.navbar, .pages__title {
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.pages__content__wrap {
+  padding: 1.4% 1.93% 0.82%;
+  height: auto;
+}
+
+.pages__title {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #333333;
+  padding-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages__title a {
+  text-decoration: underline;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #333333;
+  font-weight: 400;
+}
+
+.page__navbar {
+  width: 100%;
+  padding-top: 2.2rem;
+}
+
+.navbar__container, .navbar__border__container {
+  width: 100%;
+  max-width: 61rem;
+  display: grid;
+  grid-template-columns: 1.41fr 0.95fr 1.46fr 1.13fr 1.15fr;
+}
+
+.page__link {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: -0.15rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #333333;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  z-index: 1;
+}
+.page__link.active {
+  font-weight: 700;
+  border-bottom: 3px solid #0371AD;
+}
+.page__link:hover {
+  font-weight: 700;
+  border-bottom: 3px solid #0371AD;
+}
+
+.navbar__border__block {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #D7D7D7;
+}
+
+/* Page Container */
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+
+/* Page 1 */
+.page_1 {
+  width: 100%;
+}
+.page_1 .page__wrapper {
+  width: 100%;
+  padding: 2.19% 4.81% 2.25% 1.52%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E3E9F0;
+}
+.page_1 .charts__block {
+  width: 35.37%;
+}
+.page_1 .info__block {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page_1 .info__box {
+  margin-bottom: 1.5rem;
+}
+.page_1 .info__box:last-child {
+  margin-bottom: 0;
+}
+.page_1 .info__box__title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333333;
+}
+.page_1 .info__box__text {
+  font-size: 1.8rem;
+  color: #333333;
+}
+.page_1 .img__block {
+  width: 27.05%;
+}
+.page_1 .img__block img {
+  width: 100%;
+}
