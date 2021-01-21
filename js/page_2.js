@@ -19,6 +19,7 @@ showHiddenRowBtn.addEventListener('click', () => {
 		item.classList.toggle('hide');
 		if (!item.classList.contains('hide')) {
 			showHiddenRowBtn.classList.add('active');
+			item.scrollIntoView();
 		}else if (item.classList.contains('hide')) {
 			showHiddenRowBtn.classList.remove('active');
 		}

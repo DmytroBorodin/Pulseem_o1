@@ -95,8 +95,7 @@ html {
   margin-right: 0%;
 }
 .wrap.rtl .languages {
-  padding-left: 0;
-  padding-right: 3px;
+  padding-right: 0;
 }
 .wrap.rtl .languages option {
   text-align: right;
@@ -104,7 +103,7 @@ html {
 .wrap.rtl .select__arrow {
   position: absolute;
   width: 1rem;
-  right: 7.7rem;
+  right: 95%;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -378,13 +377,13 @@ html {
 
 .languages {
   background: transparent;
-  width: 9rem;
+  width: auto;
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 2rem;
   line-height: 2.4rem;
-  padding-left: 0.3rem;
+  padding-right: 1.5rem;
   font-family: "Assistant";
   -webkit-appearance: none;
 }
@@ -396,7 +395,7 @@ html {
 .select__arrow {
   position: absolute;
   width: 1rem;
-  right: 0.3rem;
+  right: 0.3%;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;

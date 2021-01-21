@@ -21,7 +21,7 @@
 					</h1>
 					<div class="search__block">
 						<form action="" class="search__form">
-							<input type="text" class="serch__input" placeholder='שם קמפיין'>
+							<input type="text" class="search__input" placeholder='שם קמפיין'>
 						</form>
 						<form action="" class='search__form'>
 							<input type="date" placeholder='מתאריך     ' id='from' class='date__input'>
@@ -40,6 +40,9 @@
 						<button class="search__btn">
 							<span>חיפוש</span>
 							<img src="imgs/pages/search_1.svg" alt="">
+						</button>
+						<button class="clean__btn">
+							נקה 
 						</button>
 					</div>
 					<div class="pages__buttons__block">
@@ -78,8 +81,10 @@
 							</h3>
 							<h3 class="table__col__title">פתיחות</h3>
 							<h3 class="table__col__title">הקלקות</h3>
-							<h3 class="table__col__title">שגויים</h3>
-							<h3 class="table__col__title">הסרות</h3>
+							<h3 class="table__col__title multititle">
+								<span class="subtitle">שגויים</span>
+								<span class="subtitle">הסרות</span>
+							</h3>
 						</div>
 						<div class="table__row">
 							<div class="table__col group__name">
@@ -1375,6 +1380,13 @@
     		</main>
 
     	</div>
+    	<script>
+    		let cleanBtn = document.querySelector('.clean__btn');
+    		let searchBtn = document.querySelector('.search__btn');
+    		searchBtn.addEventListener('click', () => {
+    			cleanBtn.classList.add('active');
+    		})
+    	</script>
         <script src='js/datepicker.js'></script>
         <script src="js/main.js"></script>
     </body>
