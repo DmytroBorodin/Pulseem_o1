@@ -21,9 +21,6 @@
   margin-right: 0;
   margin-left: 1rem;
 }
-.wrap.rtl .page_3 .chartdiv {
-  display: none;
-}
 .wrap.rtl .page_3 .val_1 {
   margin-right: 0;
   margin-left: 2.3rem;
@@ -112,7 +109,7 @@
 
 .navbar__container, .navbar__border__container {
   width: 100%;
-  max-width: 61rem;
+  max-width: 66rem;
   display: grid;
   grid-template-columns: 1.41fr 0.95fr 1.46fr 1.13fr 1.15fr;
 }
@@ -375,9 +372,10 @@
 
 /* Page 2 */
 .page_2 .select__block {
-  width: 20rem;
+  width: 22.4rem;
   margin: 1.9rem 0 1.9rem;
   position: relative;
+  display: flex;
 }
 .page_2 .select__title__block {
   display: flex;
@@ -387,6 +385,7 @@
 }
 .page_2 .select__title__block img {
   width: 1.2rem;
+  margin: 0 1.2rem;
 }
 .page_2 .select__title {
   font-size: 2.2rem;
@@ -479,6 +478,9 @@
 .page_3 .val_1 {
   margin-right: 2.3rem;
 }
+.page_3 .chartdiv {
+  display: none;
+}
 .page_3 .page__container {
   margin-top: 5.7rem;
   height: auto;
@@ -515,11 +517,10 @@
   border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
-.page_3 .next__btn {
+.page_3 .next__btn, .page_3 .prev__btn {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  left: 1.5rem;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -529,10 +530,21 @@
   align-items: center;
   z-index: 2;
 }
-.page_3 .next__btn img {
+.page_3 .next__btn img, .page_3 .prev__btn img {
   width: 2rem;
   margin-left: -0.4rem;
   transform: rotate(180deg);
+}
+.page_3 .prev__btn {
+  left: 1.5rem;
+}
+.page_3 .next__btn {
+  right: 1.5rem;
+}
+.page_3 .next__btn img {
+  margin-right: -0.4rem;
+  margin-left: 0;
+  transform: rotate(0);
 }
 .page_3 .chart__slider__block, .page_3 .chart__wrapper {
   position: absolute;
@@ -730,14 +742,19 @@
   width: 100%;
   margin-top: 7rem;
   align-items: stretch;
+  max-height: 55rem;
 }
 .page_3 .page__container.th .table__wrapper {
   width: 68.7%;
 }
-.page_3 .page__container.th .img__container {
-  position: relative;
+.page_3 .page__container.th .img__block {
   width: 25.33%;
   margin-top: 6.3rem;
+  overflow: auto;
+}
+.page_3 .page__container.th .img__container {
+  position: relative;
+  width: 100%;
 }
 .page_3 .page__container.th .img__container img {
   width: 100%;
@@ -973,8 +990,8 @@
   height: 0.8rem;
   margin-right: 0.5rem;
 }
-.page_5 .legend__text {
-  font-size: 1rem;
+.page_5 .legend__text .val__title {
+  font-size: 1.2rem;
 }
 .page_5 .table__container {
   margin-top: 9.4rem;

@@ -51,6 +51,7 @@ pieChart4.data = pc4data;
 pieChart4.rtl = true;
 pieChart4.radius = am4core.percent(100);
 
+series4.tooltip.disabled = true;
 series4.slices.template.propertyFields.fill = "color";
 series4.ticks.template.disabled = true;
 series4.alignLabels = false;
@@ -58,6 +59,10 @@ series4.labels.template.text = "{value.percent.formatNumber('#.0')}%";
 series4.labels.template.radius = am4core.percent(-50);
 series4.labels.template.fill = am4core.color("white");
 series4.labels.template.fontSize = '1.8rem';
+
+let slice4 = series4.slices.template;
+slice4.states.getKey("hover").properties.scale = 1;
+slice4.states.getKey("active").properties.shiftRadius = 0;
 
 // Create legend for pieChart4
 
@@ -191,7 +196,7 @@ function createSeries(field, name, chart) {
 
   	let bullet = series.bullets.push(new am4charts.LabelBullet);
   	bullet.label.text = "{name}";
-  	bullet.label.fontSize = '1.3rem';
+  	bullet.label.fontSize = '1.5rem';
   	bullet.label.fill = am4core.color("#333333");
   	bullet.horizontalCenter = "middle";
   	bullet.locationY = 1;
@@ -312,7 +317,7 @@ function createSeries1(field, name, chart) {
 
   	let bullet = series.bullets.push(new am4charts.LabelBullet);
   	bullet.label.text = "{name}";
-  	bullet.label.fontSize = '1.3rem';
+  	bullet.label.fontSize = '1.5rem';
   	bullet.label.fill = am4core.color("#333333");
   	bullet.horizontalCenter = "middle";
   	bullet.locationY = 1;
@@ -327,9 +332,13 @@ createSeries1("value_2", "הקלקות", xyChart3);
 
 let slidesArr = [...document.querySelectorAll('.slide')];
 let nextButton = document.querySelector('.next__btn');
+let prevButton = document.querySelector('.prev__btn');
 
 nextButton.addEventListener('click', () => {
-	slidesArr[0].classList.toggle('disabled');
+	slidesArr[0].classList.remove('disabled');
+})
+prevButton.addEventListener('click', () => {
+  slidesArr[0].classList.add('disabled');
 })
 
 
