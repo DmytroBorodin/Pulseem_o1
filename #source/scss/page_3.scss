@@ -216,10 +216,24 @@
 			color: #333333;
 		}
 		.img__block {
+			position: relative;
 		    width: 27.05%;
 		    height: 59rem;
 		    overflow: auto;
-		    max-height: 59rem;
+		    max-height: 60.5rem;
+		    &::-webkit-scrollbar {
+		    	width: 0.5rem;
+		    	margin-right: -0.7rem;
+			}
+			&::-webkit-scrollbar-track {
+			  background: transparent;
+			}
+
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+			  background: #fff;
+			  border-radius: 0.25rem;
+			}
 			img {
 				width: 100%;
 			}
