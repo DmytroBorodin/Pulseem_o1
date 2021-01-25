@@ -216,7 +216,10 @@
 			color: #333333;
 		}
 		.img__block {
-			width: 27.05%;
+		    width: 27.05%;
+		    height: 59rem;
+		    overflow: auto;
+		    max-height: 59rem;
 			img {
 				width: 100%;
 			}

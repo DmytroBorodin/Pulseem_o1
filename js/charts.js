@@ -49,7 +49,7 @@ let pc4data = [{
 
 pieChart4.data = pc4data;
 pieChart4.rtl = true;
-pieChart4.radius = am4core.percent(100);
+pieChart4.radius = am4core.percent(97);
 
 series4.tooltip.disabled = true;
 series4.slices.template.propertyFields.fill = "color";

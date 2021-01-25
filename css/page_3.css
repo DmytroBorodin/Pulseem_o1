@@ -207,6 +207,9 @@
 }
 .page_1 .img__block {
   width: 27.05%;
+  height: 59rem;
+  overflow: auto;
+  max-height: 59rem;
 }
 .page_1 .img__block img {
   width: 100%;
